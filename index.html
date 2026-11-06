@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="통신사 해지 때 못 받은 돈을 확인하고, 미환급액이 0원이면 air 5,000P 보상을 받아보세요.">
 <style>
@@ -59,7 +60,8 @@ html { scroll-behavior: smooth; }
 /* header */
 .top { display: flex; flex-direction: column; gap: 10px; padding-top: 20px; }
 .top-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-.wordmark { display: block; line-height: 0; }
+.wordmark { display: inline-flex; align-items: center; gap: 8px; line-height: 0; }
+.test-badge { line-height: 1; font-size: 11px; font-weight: 700; letter-spacing: 0; color: #c2410c; background: #fff1e6; border: 1px solid #fed7aa; padding: 4px 6px; border-radius: 6px; white-space: nowrap; }
 .wordmark svg { width: 44px; height: auto; display: block; }
 .status { font-size: 13px; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; color: var(--ink); white-space: nowrap; }
 .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--check); }
@@ -201,7 +203,7 @@ footer { font-size: 12px; color: var(--muted); display: grid; gap: 4px; border-t
 <main class="page">
   <header class="top">
     <div class="top-row">
-      <span class="wordmark"><svg viewBox="0 0 227 138" role="img" aria-label="air"><use href="#air-logo"/></svg></span>
+      <span class="wordmark"><svg viewBox="0 0 227 138" role="img" aria-label="air"><use href="#air-logo"/></svg><span class="test-badge">[TEST PAGE]</span></span>
       <span class="top-label">통신 미환급액 조회 서비스</span>
     </div>
   </header>
